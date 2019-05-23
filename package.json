@@ -1,0 +1,26 @@
+{
+  "name": "uber_eats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001bmain\u001b[\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Helena-herasymiuk/uber_eats.git"
+  },
+  "author": "Lena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Helena-herasymiuk/uber_eats/issues"
+  },
+  "homepage": "https://github.com/Helena-herasymiuk/uber_eats#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "htmllint": "^0.8.0",
+    "http-server": "^0.11.1",
+    "stylelint": "^10.0.1"
+  },
+  "dependencies": {}
+}
