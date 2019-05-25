@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width,
+          user-scalable=no,
+          initial-scale=1.0,
+          maximum-scale=1.0,
+          minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div class="wrapper header">
+      <a href="#" class="logo">
+        <img src="image/logo.png" alt="logo" class="logo_img">
+      </a>
+      <div class="order">
+        <form class="order__form" action="#" method="GET">
+          <input class="order__input when__input" type="text" value="ASAP" placeholder="ASAP">
+          <div class="order__text">to</div>
+          <div class="address">
+            <img src="image/location.png" alt="" class="location">
+            <input class="order__input address__input" type="text" value="Tarasivska St,16" placeholder="street">
+          </div>
+        </form>
+      </div>
+      <div class="entries">
+        <button class="sign_in">Sign in</button>
+        <button class="register">Register</button>
+        <img class="basket" src="image/basket.png" alt="basket">
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="wrapper main">
+      <div class="search">
+        <img class="search__img" src="image/search.png" alt="">
+        <input class="search__input" type="search" placeholder="Search for restaurant or cuisine">
+      </div>
+      <hr class="search_hr">
+      <span class="cards__main-text">
+          Kyiv Restaurants
+      </span>
+      <section class="cards">
+        <div class="card is_active">
+          <img class="card__img" src="image/1.png" alt="">
+          <div class="card__content">
+            <h4 class="card__name">Макдоналдс</h4>
+            <p class="card__type">&#8372;&#8372; • Бургеры</p>
+            <p class="card__time">25 - 35 Min</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="image/2.png" alt="">
+          <div class="card__content">
+            <h4 class="card__name">
+              WOKWEI
+            </h4>
+            <p class="card__type">&#8372; • Китайська • Азіатська
+            </p>
+            <p class="card__time">40 - 50 Min</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="image/3.png" alt="">
+          <div class="card__content">
+            <h4 class="card__name">YIZHA</h4>
+            <p class="card__type">&#8372;&#8372; • Американська • Бургери • Вулична їжа</p>
+            <p class="card__time">35 - 45 Min</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="image/4.png" alt="">
+          <div class="card__content">
+            <h4 class="card__name">Musafir (вул. Саксаганського)</h4>
+            <p class="card__type">&#8372;&#8372; • Близькосхідна</p>
+            <p class="card__time">30 - 40 Min</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="image/5.png" alt="">
+          <div class="card__content">
+            <h4 class="card__name">WOKWEI</h4>
+            <p class="card__type">&#8372;&#8372; • Китайська • Азіатська</p>
+            <p class="card__time">40 - 50 Min</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="image/6.png" alt="">
+          <div class="card__content">
+            <h4 class="card__name">Milk Bar</h4>
+            <p class="card__type">&#8372;&#8372; • Десерти • Європейська </p>
+            <p class="card__time">25 - 35 Min</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="image/7.png" alt="">
+          <div class="card__content">
+            <h4 class="card__name">Mimosa Brooklyn Pizza</h4>
+            <p class="card__type">&#8372;&#8372; • Італійська • Піца • Американська</p>
+            <p class="card__time">15 - 25 Min</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="image/8.png" alt="">
+          <div class="card__content">
+            <h4 class="card__name">To Be</h4>
+            <p class="card__type">&#8372;&#8372; • Японська • Азіатська • Суші</p>
+            <p class="card__time">25 - 35 Min</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__img" src="image/9.png" alt="">
+          <div class="card__content">
+            <h4 class="card__name">Druzi Cafe (вул. Прорізна)</h4>
+            <p class="card__type">&#8372;&#8372; • Американська • Сучасна європейська</p>
+            <p class="card__time">30 - 40 Min</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="wrapper footer">
+      <div class="footer__logo">
+        <img src="image/white-logo.png" alt="logo" class="footer__logo_img">
+        <hr>
+      </div>
+      <div class="footer__menu">
+        <div class="footer__menu_links">
+          <div class="select_lang">
+            <img class="world" src="image/world.png" alt="">
+            <select class="languages" name="language" id="language">
+              <option value="english"><a href="#">ENGLISH</a></option>
+              <option value="russian"><a href="#">RUSSIAN</a></option>
+            </select>
+          </div>
+          <a class="footer__tag" href="#"><span class="tag_green">#</span>UberEats</a>
+          <div class="footer__networks">
+            <a href="https://www.facebook.com">
+              <img src="image/facebook.png" alt="facebook">
+            </a>
+            <a href="https://www.twitter.com">
+              <img src="image/twitter.png" alt="twitter">
+            </a>
+            <a href="https://www.instagram.com"><img src="image/instagram.png" alt="instagram"></a>
+          </div>
+        </div>
+        <div class="footer__menu-items">
+          <a href="#">
+            <p class="footer__text">About UberEats</p>
+          </a>
+          <a href="#">
+            <p class="footer__text">Become a Delivery Partner</p>
+          </a>
+          <a href="#">
+            <p class="footer__text">Become a Restaurant Partner</p>
+          </a>
+          <a href="#">
+            <p class="footer__text">See all cities</p>
+          </a>
+          <a href="#">
+            <p class="footer__text">Pricing</p>
+          </a>
+          <a href="#">
+            <p class="footer__text">Help</p>
+          </a>
+          <a href="#">
+            <p class="footer__text">FAQs</p>
+          </a>
+        </div>
+      </div>
+      <hr>
+      <div class="footer__apps">
+        <div>
+          <a href="https://www.apple.com/ios/app-store/">
+            <img src="image/AppStore.png" alt="AppStore">
+          </a>
+        </div>
+        <div>
+          <a href="https://play.google.com/">
+            <img src="image/GPlay.png" alt="GooglePlay">
+          </a>
+        </div>
+        <hr>
+      </div>
+      <div class="footer__info">
+        <a href="#">
+          <p class="footer__infos">&copy;2019 Uber Yechnologies Inc.</p>
+        </a>
+        <a href="#">
+          <p class="footer__infos">Privacy</p>
+        </a>
+        <a href="#">
+          <p class="footer__infos">Terms</p>
+        </a>
+      </div>
+    </div>
+  </footer>
+<script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
