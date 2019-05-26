@@ -11,16 +11,6 @@ body {
   color: #000;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 72px;
-  border-bottom: 1px solid silver;
-  box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
-  margin-bottom: 40px;
-}
-
 a {
   text-decoration: none;
 }
@@ -40,15 +30,20 @@ hr {
 /* header */
 header {
   display: grid;
-  justify-content: center;
+  grid-template-columns: auto 243px 481px 232px auto;
+  grid-template-rows: 72px 17px 80px;
+  justify-items: start;
+  justify-content: center; 
+  align-items: center;
+  grid-template-areas: ". logo order entries ."
+    "border border border border border"
+    ".  search search search .";
+
+  margin-bottom: 40px;
 }
 
-.header {
-  display: grid;
-  grid-template-columns: 243px 481px 232px;
-  grid-template-rows: 72px;
-  align-items: center;
-  justify-items: start;
+.logo {
+  grid-area: logo;
 }
 
 .logo_img {
@@ -62,6 +57,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  grid-area: order;
 }
 
 .order__text {
@@ -112,6 +108,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  grid-area: entries;
 }
 
 .entries > button {
@@ -134,7 +131,13 @@ header {
   border: none;
 }
 
-/* main */
+.header_border {
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px solid silver;
+  box-shadow: 0 4px 10px rgba(38, 38, 38, 0.16);
+  grid-area: border;
+}
 
 /* search */
 
@@ -156,6 +159,7 @@ header {
   display: flex;
   align-items: center;
   margin-bottom: 13px;
+  grid-area: search;
 }
 
 .search__img {
@@ -167,6 +171,8 @@ header {
   mix-blend-mode: normal;
   opacity: 0.3;
 }
+
+/* main */
 
 /* cards */
 
