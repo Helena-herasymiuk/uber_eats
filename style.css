@@ -553,7 +553,7 @@ footer {
 
   main {
     grid-template-columns: 99%;
-    grid-template-rows: 79px 85px 87px 3422px;
+    grid-template-rows: 79px 85px 87px 3382px;
     grid-template-areas: "search"
       "."
       "main_text"
