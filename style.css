@@ -4,6 +4,9 @@
   --black-text-color: #1d1d1d;
 }
 
+@font-face {
+  font-display: auto;
+}
 body {
   margin: 0;
   padding: 0;
@@ -80,7 +83,7 @@ header {
   line-height: 24px;
   color: var(--black-text-color);
   font-style: normal;
-  font-weight: 450;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -219,6 +222,8 @@ main {
 
 .card {
   color: var(--black-text-color);
+  width: 308px;
+  height: 360px;
 }
 
 .card__name {
@@ -465,6 +470,11 @@ footer {
     width: 100%;
   }
 
+  .card {
+    width: 368px;
+    height: 366px;
+  }
+
   footer {
     grid-template-columns: 97%;
   }
@@ -584,13 +594,15 @@ footer {
   .cards {
     grid-template-columns: 98%;
     grid-template-rows: 356px 356px 356px 356px 356px 356px 356px 356px 382px;
-    justify-content: center;
+    justify-items: center;
     width: 100%;
     margin-bottom: 20px;
   }
 
   .card {
     text-align: center;
+    width: 308px;
+    height: 356px;
   }
 
   footer {
